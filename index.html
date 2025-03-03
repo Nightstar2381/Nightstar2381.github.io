@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>แยกขยะ</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+</head>
+<body onload="activeShowPage()">
+
+  <div class="lds-facebook" id="preloader"><div></div><div></div><div></div></div>
+  <div id="pagecontent" class="content fadecontent">
+
+
+    <header class="p-3" style="background-image: url(resized_img.png);">
+        <div class="container">
+          <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+            
+    
+            <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+              <li><a href="index.html" class="nav-link px-2 text-secondary">Home</a></li>
+              
+              <li><a href="#" class="nav-link px-2 text-white">About</a></li>
+            </ul>
+    
+            <div class="search-container">
+              <form id="searchForm" role="search">
+                <input type="search" id="searchInput" class="form-control form-control-dark text-bg-" placeholder="Search..." aria-label="Search">
+                <button type="submit">ค้นหา</button>
+              </form>
+            </div>
+            
+            <div id="searchResult"></div>
+          
+            <!-- Custom Alert -->
+<div id="customAlert" class="custom-alert">
+  <div class="alert-content">
+    <p id="alertMessage"></p>
+    <button id="closeAlert">ปิด</button>
+  </div>
+</div>
+            
+          </div>
+        </div>
+      </header>
+      
+
+      <div class="card-container">
+        <div class="card">
+            <img src="img2.png" alt="Image 1">
+            <p>การแยกขยะทั่วไป</p>
+            <a href="blue.html">เรียนรู้เพิ่มเติม</a>
+        </div>
+        <div class="card">
+            <img src="img3.png" alt="Image 2">
+            <p>ขยะเปียก</p>
+            <a href="green.html">เรียนรู้เพิ่มเติม</a>
+        </div>
+        <div class="card">
+            <img src="img4.png" alt="Image 3">
+            <p>ขยะรีไซเคิล</p>
+            <a href="yellow.html">เรียนรู้เพิ่มเติม</a>
+        </div>
+        <div class="card">
+          <img src="img5.png" alt="Image 3">
+          <p>ขยะอันตราย</p>
+          <a href="red.html">เรียนรู้เพิ่มเติม</a>
+      </div>
+    </div>
+
+  </div>  
+  
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+      <script src="main.js"></script>
+</body>
+</html>
