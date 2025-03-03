@@ -1,0 +1,191 @@
+html {
+    scroll-behavior: smooth;
+}
+body {
+    background-image: url(resized_img.png);
+    
+    
+    
+}
+
+    .nav-link {
+        transition: color 0.3s ease-in-out, font-weight 0.3s ease-in-out;
+        color: #0e0b01;
+        
+    }
+    
+    .nav-link:hover {
+        color: #0e0b01 !important; /* เปลี่ยนสีเป็นเหลืองเมื่อ hover */
+        font-weight: bold; /* ทำให้ตัวหนังสือหนาขึ้นเมื่อ hover */
+        text-shadow: 2px 2px 5px rgba(63, 6, 196, 0.5); /* เพิ่มเงาให้ตัวหนังสือ */
+    }
+
+.card-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 100px;
+}
+.card {
+    width: 250px;
+    height: 350px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+    transition: transform 0.3s ease-in-out;
+    perspective: 1000px;
+    padding: 15px;
+    text-align: center;
+}
+.card img {
+    width: 100%;
+    border-radius: 10px;
+}
+.card a {
+    text-decoration: none;
+    color: white;
+    background: blue;
+    padding: 8px 12px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+.card:hover {
+    transform: rotateY(15deg) scale(1.1);
+}
+
+/* Custom alert styles */
+.custom-alert {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    padding: 20px;
+    background-color: #f44336;
+    color: white;
+    border-radius: 8px;
+    display: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 9999;
+  }
+  
+  .alert-content {
+    text-align: center;
+  }
+  
+  .custom-alert button {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #fff;
+    border: none;
+    color: #f44336;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  .custom-alert button:hover {
+    background-color: #f8d7d7;
+  }
+
+  /*ส่วนของค้นหาui*/
+  .search-container {
+    display: flex;  /* ใช้ Flexbox เพื่อจัดระเบียบ */
+    justify-content: flex-start; /* ให้ช่องค้นหาและปุ่มค้นหาอยู่ในแถวเดียวกัน */
+    align-items: center; /* จัดตำแหน่งให้ปุ่มอยู่ในแนวเดียวกับช่องค้นหา */
+  }
+  
+  #searchInput {
+    flex-grow: 1; /* ให้ช่องค้นหาขยายตัวตามความยาวที่เหลือ */
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  button {
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-left: 10px;  /* เว้นระยะระหว่างช่องค้นหากับปุ่ม */
+  }
+  
+  button:hover {
+    background-color: #45a049; /* เปลี่ยนสีเมื่อ hover */
+  }
+  
+  
+  .lds-facebook {
+    /* change color here */
+    color: #b9122e
+  }
+  .lds-facebook,
+  .lds-facebook div {
+    box-sizing: border-box;
+  }
+  .lds-facebook {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);;
+
+  }
+  .lds-facebook div {
+    display: inline-block;
+    position: absolute;
+    left: 8px;
+    width: 16px;
+    background: currentColor;
+    animation: lds-facebook 1.2s cubic-bezier(0, 0.5, 0.5, 1) infinite;
+  }
+  .lds-facebook div:nth-child(1) {
+    left: 8px;
+    animation-delay: -0.24s;
+  }
+  .lds-facebook div:nth-child(2) {
+    left: 32px;
+    animation-delay: -0.12s;
+  }
+  .lds-facebook div:nth-child(3) {
+    left: 56px;
+    animation-delay: 0s;
+  }
+  @keyframes lds-facebook {
+    0% {
+      top: 8px;
+      height: 64px;
+    }
+    50%, 100% {
+      top: 24px;
+      height: 32px;
+    }
+  }
+
+  .fadecontent {
+    animation-name: fade;
+    animation-duration: 2s;
+  }
+
+  @keyframes fade {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+
+  .content {
+    display: none;
+  }
